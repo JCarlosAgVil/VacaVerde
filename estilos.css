@@ -116,11 +116,34 @@ nav ul li a
 {
 	background: white;
 	border-bottom: 3px solid #22BCe0;
-	overflow: hidden;
+	/*overflow: hidden;*/
+	position: relative;
+	min-height: 128px;
+	margin-bottom: 3em;
 }
 #contenido .item .autor_item
 {
-	
+	color: #AAA;
+}
+#contenido .item .datos_item
+{
+	margin: 1em 1em 0 0;
+	text-align: right;
+
+}
+#contenido .item .datos_item .tag_item
+{
+	background: #f4502a;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0.2em 0.5em;
+	border-radius: 0.5em;
+	float: left;
+}
+#contenido .item .datos_item .fecha_item
+{
+	color: #AAA;
 }
 #contenido .item .imagen_item
 {
@@ -133,6 +156,7 @@ nav ul li a
 }
 #contenido .item .titulo_item
 {
+	padding: 1em 1em 0 0;
 	font-size: 1.2em;
 	font-style: italic;
 }
@@ -140,4 +164,21 @@ nav ul li a
 {
 	color: #444;
 	text-decoration: none;
+}
+#contenido .item .votacion
+{
+	position: absolute;
+	left: 0;
+	top: 100%;
+	background: white;
+	width: 90%;
+	left: 5%;
+	margin-top: 3px;
+	padding: 0.2em 0.5em;
+	border-radius: 0 0 0.5em 0.5em;
+}
+#contenido .item .votacion .comentarios_item, 
+#contenido .item .votacion .guardar_item
+{
+	float: right;
 }
