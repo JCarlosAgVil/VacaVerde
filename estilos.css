@@ -186,10 +186,11 @@ aside
 #contenido .item
 {
 	background: white;
-	border-bottom: 3px solid #22BCE0;
-	margin-bottom: 3em;
-	min-height: 128px;
+	border-bottom: 3px solid #22BCe0;
+	/*overflow: hidden;*/
 	position: relative;
+	min-height: 128px;
+	margin-bottom: 3em;
 }
 #contenido .item .autor_item
 {
@@ -198,6 +199,7 @@ aside
 #contenido .item .datos_item
 {
 	margin: 1em 1em 0 0;
+<<<<<<< HEAD
 }
 #contenido .item .datos_item .fecha_item
 {
@@ -212,6 +214,24 @@ aside
 	display: inline-block;
 	padding: 0.2em 0.5em;
 	text-decoration: none;
+=======
+	text-align: right;
+
+}
+#contenido .item .datos_item .tag_item
+{
+	background: #f4502a;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0.2em 0.5em;
+	border-radius: 0.5em;
+	float: left;
+}
+#contenido .item .datos_item .fecha_item
+{
+	color: #AAA;
+>>>>>>> origin/master
 }
 #contenido .item .imagen_item
 {
@@ -224,6 +244,7 @@ aside
 }
 #contenido .item .titulo_item
 {
+	padding: 1em 1em 0 0;
 	font-size: 1.2em;
 	font-style: italic;
 	margin-bottom: 0;
@@ -236,6 +257,7 @@ aside
 }
 #contenido .item .votacion
 {
+<<<<<<< HEAD
 	background: white;
 	border-radius: 0 0 0.5em 0.5em;
 	left: 3%;
@@ -307,4 +329,20 @@ formulario
 	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
 	color: white;
 	border-color: #22BCE0;
+=======
+	position: absolute;
+	left: 0;
+	top: 100%;
+	background: white;
+	width: 95%;
+	left: 1em;
+	margin-top: 3px;
+	padding: 0.2em 0.5em;
+	border-radius: 0 0 0.5em 0.5em;
+}
+#contenido .item .votacion .comentarios_item, 
+#contenido .item .votacion .guardar_item
+{
+	float: right;
+>>>>>>> origin/master
 }
