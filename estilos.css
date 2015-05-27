@@ -199,24 +199,11 @@ aside
 #contenido .item .datos_item
 {
 	margin: 1em 1em 0 0;
-<<<<<<< HEAD
 }
 #contenido .item .datos_item .fecha_item
 {
 	color: #AAA;
 	float: right;
-}
-#contenido .item .datos_item .tag_item
-{
-	background: #F4502A;
-	border-radius: 0.5em;
-	color: white;
-	display: inline-block;
-	padding: 0.2em 0.5em;
-	text-decoration: none;
-=======
-	text-align: right;
-
 }
 #contenido .item .datos_item .tag_item
 {
@@ -227,11 +214,6 @@ aside
 	padding: 0.2em 0.5em;
 	border-radius: 0.5em;
 	float: left;
-}
-#contenido .item .datos_item .fecha_item
-{
-	color: #AAA;
->>>>>>> origin/master
 }
 #contenido .item .imagen_item
 {
@@ -257,7 +239,6 @@ aside
 }
 #contenido .item .votacion
 {
-<<<<<<< HEAD
 	background: white;
 	border-radius: 0 0 0.5em 0.5em;
 	left: 3%;
@@ -329,20 +310,4 @@ formulario
 	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
 	color: white;
 	border-color: #22BCE0;
-=======
-	position: absolute;
-	left: 0;
-	top: 100%;
-	background: white;
-	width: 95%;
-	left: 1em;
-	margin-top: 3px;
-	padding: 0.2em 0.5em;
-	border-radius: 0 0 0.5em 0.5em;
-}
-#contenido .item .votacion .comentarios_item, 
-#contenido .item .votacion .guardar_item
-{
-	float: right;
->>>>>>> origin/master
 }
