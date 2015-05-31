@@ -3,11 +3,12 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="description" content="Proyecto de la primera generación del 2014 del curso de diseño web online" />
-	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
 	<title>Puls2014: Comunidad de personas atractivas y sexy</title>
 	<link rel="stylesheet" href="normalize.css" />
 	<link rel="stylesheet" href="estilos.css" />
-	<script type="text/javascript" src="prefixfree.js"></script>
+
+	<script src="prefixfree.js"></script>
 </head>
 <body>
 	<header>
@@ -29,27 +30,22 @@
 			<li><a href="#">CSS3</a></li>
 			<li><a href="#">Django</a></li>
 			<li id="publicar_nav">
-				<a href="#" class="icon-lapiz">  Publicar</a>
+				<a href="#" data-nombre="pablo" class="icon-lapiz">Publicar</a>
 			</li>
 		</ul>
 	</nav>
 	<form action="" id="formulario" class="formulario">
-		<!--<label for="titulo">Titulo</label>-->		
-		<input type="text" id="titulo" placeholder="Titulo" required/>
-		<!--<label for="url">URL</label>-->
-		<input type="url" id="url" placeholder="Link" required />
+		<input type="text" placeholder="Título" id="titulo" name="titulo" required>
+		<input type="url" placeholder="Link" id="link" name="link" required>
 		<input type="submit" value="Agregar">
-
 	</form>
-
 	<aside>
-		<video width="320" height="240" autoplay controls>
-			<source src="lecturas.m4v" type="video/mp4">
-			<source src="lecturas.ogg" type="video/ogg" >
-			Tu navegador no soporta este video.
+		<video width="320" height="240" controls autoplay>
+			<source src="lecturas.mp4" type="video/mp4">
+			<source src="lecturas.ogg" type="video/ogg">
+			<!-- Actualiza tu navegador -->
 		</video>
 	</aside>
-	
 	<section id="contenido">
 		<article class="item">
 			<figure class="imagen_item">
@@ -70,11 +66,11 @@
 				</span>
 			</div>
 			<div class="votacion">
-				<a href="#" class="up icon-f-arriba"></a>
+				<a href="#" class="up icon-flecha-arriba"></a>
 				720
-				<a href="#" class="down icon-f-abajo"></a>
+				<a href="#" class="down icon-flecha-abajo"></a>
 				<a href="#" class="comentarios_item">69</a>
-				<a href="#" class="guardar_item icon-estrella">  </a>
+				<a href="#" class="guardar_item icon-estrella"></a>
 			</div>
 		</article>
 		<article class="item">
@@ -96,11 +92,11 @@
 				</span>
 			</div>
 			<div class="votacion">
-				<a href="#" class="up icon-f-arriba"></a>
+				<a href="#" class="up icon-flecha-arriba"></a>
 				720
-				<a href="#" class="down icon-f-abajo"></a>
+				<a href="#" class="down icon-flecha-abajo"></a>
 				<a href="#" class="comentarios_item">69</a>
-				<a href="#" class="guardar_item icon-estrella"> </a>
+				<a href="#" class="guardar_item icon-estrella"></a>
 			</div>
 		</article>
 		<article class="item">
@@ -122,11 +118,11 @@
 				</span>
 			</div>
 			<div class="votacion">
-				<a href="#" class="up icon-f-arriba"></a>
+				<a href="#" class="up icon-flecha-arriba"></a>
 				720
-				<a href="#" class="down icon-f-abajo"></a>
+				<a href="#" class="down icon-flecha-abajo"></a>
 				<a href="#" class="comentarios_item">69</a>
-				<a href="#" class="guardar_item icon-estrella"> </a>
+				<a href="#" class="guardar_item icon-estrella"></a>
 			</div>
 		</article>
 		<article class="item">
@@ -148,11 +144,11 @@
 				</span>
 			</div>
 			<div class="votacion">
-				<a href="#" class="up icon-f-arriba"></a>
+				<a href="#" class="up icon-flecha-arriba"></a>
 				720
-				<a href="#" class="down icon-f-abajo"></a>
+				<a href="#" class="down icon-flecha-abajo"></a>
 				<a href="#" class="comentarios_item">69</a>
-				<a href="#" class="guardar_item icon-estrella"> </a>
+				<a href="#" class="guardar_item icon-estrella"></a>
 			</div>
 		</article>
 		<article class="item">
@@ -174,11 +170,11 @@
 				</span>
 			</div>
 			<div class="votacion">
-				<a href="#" class="up icon-f-arriba"></a>
+				<a href="#" class="up icon-flecha-arriba"></a>
 				720
-				<a href="#" class="down icon-f-abajo"></a>
+				<a href="#" class="down icon-flecha-abajo"></a>
 				<a href="#" class="comentarios_item">69</a>
-				<a href="#" class="guardar_item icon-estrella"> </a>
+				<a href="#" class="guardar_item icon-estrella"></a>
 			</div>
 		</article>
 		<article class="item">
@@ -200,11 +196,11 @@
 				</span>
 			</div>
 			<div class="votacion">
-				<a href="#" class="up icon-f-arriba"></a>
+				<a href="#" class="up icon-flecha-arriba"></a>
 				720
-				<a href="#" class="down icon-f-abajo"></a>
+				<a href="#" class="down icon-flecha-abajo"></a>
 				<a href="#" class="comentarios_item">69</a>
-				<a href="#" class="guardar_item icon-estrella"> </a>
+				<a href="#" class="guardar_item icon-estrella"></a>
 			</div>
 		</article>
 	</section>
@@ -216,16 +212,23 @@
 			mejorando.la 2014
 		</p>
 	</footer>
-	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="formulario.js"></script>
-	<script type="text/javascript">
-			window.onload=function(){
-					console.log("ya se disparo el evento onload");
-
-			}
-			$(function(){
-				<!-- console.log("Ya se sidparo el evento DOMContentLoaded"); -->
-			})
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="formulario.js"></script>
+	<script>
+		$(function(){
+			$('#publicar_nav a').on('click', function(tito) 
+			{
+				tito.preventDefault();
+				$(this).toggleClass('disabled');
+				var data = $(this).data();
+				$(this).data('apellido', 'rigazzi');
+			});
+		});
 	</script>
 </body>
 </html>
+
+
+
+
+
